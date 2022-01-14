@@ -1,4 +1,4 @@
 export interface UserData {
-  name: String
-  email: String
+  name: string
+  email: string
 }
