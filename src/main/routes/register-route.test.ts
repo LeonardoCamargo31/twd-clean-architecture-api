@@ -1,5 +1,5 @@
 import request from 'supertest'
-import app from '@/main/config/app'
+import { app } from '@/main/config/app'
 
 describe('Register route', () => {
   test('should return an account on success', async () => {

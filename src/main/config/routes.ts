@@ -9,6 +9,6 @@ export const setupRoutes = (app:Express):void => {
   readdirSync(pathRoutes)
     .filter(item => !/(test\.ts|index.ts)/g.test(item))
     .map(async file => {
-      return (await import(`${pathRoutes}/${file}`)).default(router)
+      return (await import(`${pathRoutes}/${file}`)).handle(router)
     })
 }
