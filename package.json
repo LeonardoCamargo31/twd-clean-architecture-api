@@ -13,12 +13,13 @@
     "test:staged": "npm test -- --findRelatedTests"
   },
   "_moduleAliases": {
-    "@":"dist"
+    "@": "dist"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@shelf/jest-mongodb": "^2.2.2",
     "@types/express": "^4.17.13",
     "@types/jest": "^27.4.0",
     "@types/node": "^17.0.8",
