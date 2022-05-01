@@ -32,6 +32,7 @@ export class RegisterUserController {
         return created(response.value)
       }
     } catch (error) {
+      console.error(error)
       return serverError(error)
     }
   }
